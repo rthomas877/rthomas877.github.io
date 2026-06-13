@@ -1,0 +1,33 @@
+:root {
+    --my-favorite-color: rgb(180, 144, 144);
+    --my-second-favorite-color: rgb(242, 234, 234);
+}
+
+body {
+    font-family: 'Pliant';
+    color: var(--my-second-favorite-color);
+    background-image: url(guide-to-scotland-old-man-of-storr-hiking-trail.jpg);
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+}
+
+table, td, th {
+    border: 1px solid black
+}
+
+/* try odd below (replace 2n with 3n, even, odd) */
+/* afterwards use td instead of tr */
+tr:nth-child(odd) {background-color: var(--my-favorite-color);}
+tr:nth-child(even) {background-color: silver;}
+
+
+#experience {
+    background-color: brown;
+    padding: 2rem;
+}
